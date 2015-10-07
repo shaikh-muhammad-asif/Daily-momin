@@ -101,12 +101,7 @@ p {
     height: 50% !important;
 }
 
-
 /*--------pai-------------*/
-
-
-
-
 #id1{
     height: 250px;
     margin-top: 2px;
@@ -115,9 +110,6 @@ p {
     height: 200px;
     background-color: rgba(169, 169, 169, 0);
 }
-/*#id3{*/
-    /*height: 60px;*/
-/*}*/
 .line{
     margin-top: -11px;
     color: #055E61;
@@ -137,7 +129,6 @@ body {
     text-align: center;
     /*padding-top: 5em;*/
 }
-
 .pie {
     display: inline-block;
     position: relative;
@@ -150,7 +141,6 @@ body {
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
-
 .slice-right {
     position: absolute;
     z-index: 11;
@@ -162,7 +152,6 @@ body {
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
-
 .slice-left {
     position: absolute;
     z-index: 11;
@@ -174,7 +163,6 @@ body {
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
-
 .percent {
     position: absolute;
     z-index: 20;
@@ -187,7 +175,6 @@ body {
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
-
 .number {
     position: absolute;
     z-index: 30;
@@ -198,7 +185,6 @@ body {
     font-size: .3em;
     color: #485c65;
 }
-
 .slice-right {
     -webkit-animation-delay: 1.2s;
     -webkit-animation-duration: 0.3s;
@@ -207,7 +193,6 @@ body {
     -webkit-animation-fill-mode: forwards;
 
 }
-
 .slice-left {
     -webkit-animation-delay: 1.5s;
     -webkit-animation-duration: 0.3s;
@@ -216,7 +201,6 @@ body {
     -webkit-animation-timing-function: ease-out;
     -webkit-animation-fill-mode: forwards;
 }
-
 @-webkit-keyframes right-slice {
     from {
         clip: rect(0, 50%, 0.5em, 0.5em);
@@ -228,7 +212,6 @@ body {
         clip: rect(0, 1em, 1em, 0.5em);
     }
 }
-
 @-webkit-keyframes left-slice {
     from {
         clip: rect(0.5em, 0.5em, 1em, 0.5em);
@@ -245,8 +228,6 @@ body {
     width: 19% !important;
     height: 85px !important;
 }
-
-
 canvas#bar.chart.chart-bar{
     width: 361px;
     height: 190px;
@@ -319,132 +300,10 @@ canvas#bar.chart.chart-line {
     /*width:10px;*/
     /*height: 10px;*/
     background: url('../img/LOGO-196-x-196-DESIGN-2.jpg'); background-size: cover;
-
 }
-
 #down{
     margin-top: 50px;
 }
-
-
-/*----jquary------*/
-/*.ok{*/
-    /*background: #ececec;*/
-    /*font-family: "Arial Narrow", sans-serif;*/
-    /*text-align: center;*/
-    /*font-weight: bold;*/
-    /*font-family: 'PT Sans Caption', sans-serif;*/
-/*}*/
-/*.stat-group {*/
-    /*/!*font-family: "Arial Narrow", sans-serif;*!/*/
-    /*/!*font-family: 'PT Sans Caption', sans-serif;*!/*/
-    /*/!*text-align: center;*!/*/
-    /*/!*font-weight: bold;*!/*/
-    /*position: relative;*/
-    /*display: inline-block;*/
-    /*height: 150px;*/
-    /*width: 150px;*/
-/*}*/
-/*.stat-group .per {*/
-    /*position: absolute;*/
-    /*height: 0;*/
-    /*line-height: 0;*/
-    /*width: 100%;*/
-    /*top: 50%;*/
-    /*font-size: 2em;*/
-    /*text-align: center;*/
-    /*color: #000;*/
-    /*opacity: 0.8;*/
-/*}*/
-
-/*.rerun {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*text-decoration: none;*/
-    /*padding: 1em;*/
-    /*background-color: #ccc;*/
-    /*color: #fff;*/
-    /*border-radius: 0 0 0 .5em;*/
-    /*transition: background-color 300ms;*/
-/*}*/
-/*.rerun:hover {*/
-    /*background-color: #249daa;*/
-/*}*/
-/*.progress-pie-chart {*/
-    /*width: 200px;*/
-    /*height: 200px;*/
-    /*border-radius: 50%;*/
-    /*background-color: #E5E5E5;*/
-    /*position: relative;*/
-/*}*/
-/*.progress-pie-chart.gt-50 {*/
-    /*background-color: #81CE97;*/
-/*}*/
-
-/*.ppc-progress {*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*border-radius: 50%;*/
-    /*left: calc(50% - 100px);*/
-    /*top: calc(50% - 100px);*/
-    /*width: 200px;*/
-    /*height: 200px;*/
-    /*clip: rect(0, 200px, 200px, 100px);*/
-/*}*/
-/*.ppc-progress .ppc-progress-fill {*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*border-radius: 50%;*/
-    /*left: calc(50% - 100px);*/
-    /*top: calc(50% - 100px);*/
-    /*width: 200px;*/
-    /*height: 200px;*/
-    /*clip: rect(0, 100px, 200px, 0);*/
-    /*background: #81CE97;*/
-    /*transform: rotate(60deg);*/
-/*}*/
-/*.gt-50 .ppc-progress {*/
-    /*clip: rect(0, 100px, 200px, 0);*/
-/*}*/
-/*.gt-50 .ppc-progress .ppc-progress-fill {*/
-    /*clip: rect(0, 200px, 200px, 100px);*/
-    /*background: #E5E5E5;*/
-/*}*/
-
-/*.ppc-percents {*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*border-radius: 50%;*/
-    /*left: calc(50% - 173px/2);*/
-    /*top: calc(50% - 173px/2);*/
-    /*width: 173.91304px;*/
-    /*height: 173.91304px;*/
-    /*background: #fff;*/
-    /*text-align: center;*/
-    /*display: table;*/
-/*}*/
-/*.ppc-percents span {*/
-    /*display: block;*/
-    /*font-size: 2.6em;*/
-    /*font-weight: bold;*/
-    /*color: #81CE97;*/
-/*}*/
-
-/*.pcc-percents-wrapper {*/
-    /*display: table-cell;*/
-    /*vertical-align: middle;*/
-/*}*/
-
-/*body {*/
-    /*font-family: Arial;*/
-    /*background: #f7f7f7;*/
-/*}*/
-
-/*.progress-pie-chart {*/
-    /*margin: 50px auto 0;*/
-/*}*/
-
 .stat-group {
     font-family: "Arial Narrow", sans-serif;
     font-family: 'PT Sans Caption', sans-serif;
