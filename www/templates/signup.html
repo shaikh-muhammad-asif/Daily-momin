@@ -1,0 +1,46 @@
+<ion-view view-title="SingUp">
+
+<ion-header-bar>
+    <h1 class="title">Sign Up</h1>
+</ion-header-bar>
+
+<ion-content has-bouncing="false">
+    <div style="height: 0px"></div>
+<form >
+    <div class="list">
+        <label class="item item-input">
+            <span class="input-label">Name</span>
+            <input type="text" ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Last Name</span>
+            <input type="text" ng-model="loginData.password">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="text" ng-model="loginData.password">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Gender</span>
+            <input type="text" ng-model="loginData.password">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Age</span>
+            <input type="text" ng-model="loginData.password">
+        </label>
+        <label class="item item-input">
+            <span class="input-label">Password</span>
+            <input type="password" ng-model="loginData.password">
+        </label>
+
+        <label class="item">
+            <button class="button button-block button-royal" type="submit" >Sign Up</button>
+        </label>
+    </div>
+</form>
+
+    <label class="item text-center">
+        <p> Already have an Account </p> <button class="button button-clear button-positive" type="submit" ui-sref="dailyMomin.login"> Log In </button>
+    </label>
+</ion-content>
+</ion-view>

@@ -1,0 +1,148 @@
+
+
+<!--<ion-view>-->
+    <!--<div class="bar bar-subheader" >-->
+        <!--<div class="button-bar" >-->
+            <!--<a class="button button-icon icon ion-android-checkbox-outline" ng-click="tabs1()">checked</a>-->
+            <!--<a class="button button-icon icon ion-android-checkbox-outline-blank" ng-click="tabs2()">unchecked</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<ion-content >-->
+
+
+
+            <!--<div ng-show="tab2">-->
+
+                        <!--<div class="card" ng-repeat="x in newlist">-->
+                            <!--<div >-->
+                                <!--<p style="font-size: large">-->
+                                    <!--{{x.name}}-->
+                                <!--</p>-->
+                            <!--</div>-->
+                            <!--<div class="item item-divider">-->
+                                <!--<li class="item item-checkbox">-->
+                                    <!--<label class="checkbox">-->
+                                        <!--<input type="checkbox">-->
+                                    <!--</label>-->
+                                    <!--Has been checked !-->
+                                <!--</li>-->
+                            <!--</div>-->
+                        <!--</div>-->
+            <!--</div>-->
+
+        <!--<div ng-show="tab1">-->
+
+            <!--<ion-slide-box does-continue="true">-->
+                <!--<ion-slide  ng-repeat="x in lists">-->
+                    <!--<div class="card">-->
+                        <!--<div class="distance">-->
+                            <!--<p style="font-size: large">-->
+                                <!--{{x.name}}-->
+                            <!--</p>-->
+                        <!--</div>-->
+                        <!--<div class="item item-divider">-->
+                            <!--<li class="item item-checkbox">-->
+                                <!--<label class="checkbox">-->
+                                    <!--<input type="checkbox" ng-model="x.done">-->
+                                <!--</label>-->
+                                <!--check now!{{x.done}}-->
+                            <!--</li>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</ion-slide>-->
+            <!--</ion-slide-box>-->
+            <!--<div class="card" ng-repeat="x in lists">-->
+                <!--<div >-->
+                    <!--<p style="font-size: large">-->
+                        <!--{{x.name}}-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="item item-divider">-->
+                    <!--<li class="item item-checkbox">-->
+                        <!--<label class="checkbox">-->
+                            <!--<input type="checkbox"  ng-model="x.done">-->
+                        <!--</label>-->
+                         <!--checked !-->
+                    <!--</li>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+
+
+
+    <!--</ion-content>-->
+    <!--<div class="bar bar-footer item-input-inset" ng-if="showFooter">-->
+
+        <!--<button class="button button-clear button-full" ng-click="submit()">-->
+            <!--submit-->
+        <!--</button>-->
+    <!--</div>-->
+<!--</ion-view>-->
+
+
+<!--ng-click="vis=!vis"-->
+<ion-tabs class="tabs-icon-top tabs-top tabs-positive  has-tabs-item-show " delegate-handle="myTabs">
+
+    <ion-tab title="UNCHECKED" icon="ion-android-checkbox-outline-blank" ng-click="storeTab(0)">
+        <ion-content  has-bouncing="true">
+            <ion-refresher on-refresh="doRefresh()">
+
+            </ion-refresher>
+            <!--<ion-slide-box does-continue="true">-->
+            <!--<ion-slide >-->
+            <div class="card" ng-repeat="x in lists">
+                <div class="distance">
+                    <p style="font-size: large">
+                        {{x.name}}
+                    </p>
+                </div>
+                <div class="item item-divider">
+                    <li class="item item-checkbox">
+                        <label class="checkbox">
+                            <input type="checkbox" ng-model="x.done" ng-click="togle()">
+                        </label>
+                        check now!{{x.done}}
+                    </li>
+                </div>
+            </div>
+            <!--</ion-slide>-->
+            <!--</ion-slide-box>-->
+
+        </ion-content>
+
+        <div class="bar bar-footer item-input-inset" ng-if="showFooter">
+
+            <button class="button button-clear button-full" ng-click="submit()">
+                submit
+            </button>
+        </div>
+
+    </ion-tab>
+
+    <ion-tab title="CHECKED"  icon="ion-android-checkbox-outline" ng-click="storeTab(1)">
+        <ion-content class="pad" has-bouncing="true">
+
+            <ion-refresher on-refresh="doRefresh()">
+            </ion-refresher>
+
+            <div class="card" ng-repeat="x in newlist">
+                <div >
+                    <p style="font-size: large">
+                        {{x.name}}
+                    </p>
+                </div>
+                <div class="item item-divider">
+                    <li class="item item-checkbox">
+                        <label class="checkbox">
+                            <input type="checkbox" ng-model="true" ng-disabled="true">
+                        </label>
+                        Has been checked !
+                    </li>
+                </div>
+            </div>
+        </ion-content>
+    </ion-tab>
+
+
+</ion-tabs>

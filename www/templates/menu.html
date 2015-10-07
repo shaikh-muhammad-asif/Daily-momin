@@ -1,0 +1,54 @@
+<ion-view view-title="Menu">
+
+<ion-side-menus enable-menu-with-back-views="true">
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar bar-header fontcolor accent-color has-subheader">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon meramenu" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+
+  <ion-side-menu side="right">
+
+      <div class="outer-div"><div class="inner-div"></div></div>
+
+    <ion-content id="down" has-bouncing="false">
+      <ion-list style="text-align: start">
+        <ion-item menu-close ui-sref="dailyMomin.login">
+          Login
+        </ion-item>
+        <ion-item menu-close ui-sref="dailyMomin.signup">
+          SignUp
+        </ion-item>
+        <ion-item menu-close ui-sref="dailyMomin.home" >
+          Home
+        </ion-item>
+        <ion-item menu-close ui-sref="dailyMomin.setting" ng-click="hello()">
+          Reports
+        </ion-item>
+        <ion-item menu-close >
+          About Us
+        </ion-item>
+      </ion-list>
+    </ion-content>
+
+    <div class="bar bar-footer item-input-inset" >
+
+      <button class="button button-clear button-full" ui-sref="dailyMomin.login" menu-close>
+        logout
+      </button>
+      <!--<button ui-sref="dailyMomin.login"  >Login</button>-->
+    </div>
+
+
+  </ion-side-menu>
+</ion-side-menus>
+</ion-view>
